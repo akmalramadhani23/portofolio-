@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akmal Ramadhani Putra Handoyo — Portofolio Pelajar & Perbankan Syariah</title>
+  <meta name="description" content="Portofolio pribadi Akmal Ramadhani Putra Handoyo, pelajar dengan keahlian Layanan Perbankan Syariah dan pengalaman PKL di PT. LYNN Hotel Mojokerto.">
+  <meta name="theme-color" content="#1e40af" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Akmal Ramadhani Putra Handoyo — Portofolio Pribadi">
+  <meta property="og:description" content="Pelajar dengan keahlian Layanan Perbankan Syariah. Berpengalaman dalam administrasi revenue, inventory gudang, dan sistem VHP.">
+  <meta property="og:locale" content="id_ID">
+  <!-- EDIT: ganti dengan URL situs asli setelah deploy ke Vercel -->
+  <meta property="og:url" content="https://akmal-ramadhani.vercel.app">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Akmal Ramadhani Putra Handoyo — Portofolio Pribadi">
+  <meta name="twitter:description" content="Pelajar dengan keahlian Layanan Perbankan Syariah dari Mojokerto, Jawa Timur.">
+
+  <!-- Favicon SVG Inline -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231e40af'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='700' font-size='28' fill='%23facc15'%3EAR%3C/text%3E%3C/svg%3E">
+
+  <!-- Google Fonts dengan Font Cadangan -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!--
+  ==========================================================================
+  EDIT: DATA UTAMA PORTOFOLIO
+  Silakan ubah data pribadi, tautan, pendidikan, atau sertifikasi pada
+  bagian-bagian yang ditandai dengan komentar EDIT di bawah ini.
+  ==========================================================================
+  -->
+
+  <style>
+    /* Variabel Warna & Tema (Terang & Gelap) */
+    :root {
+      --bg-primary: #f8fafc;
+      --bg-secondary: #ffffff;
+      --bg-tertiary: #f1f5f9;
+      --text-primary: #0f172a;
+      --text-secondary: #334155;
+      --text-muted: #475569;
+      --brand-primary: #1e40af;      /* Biru Kobalt */
+      --brand-primary-hover: #1d4ed8;
+      --brand-accent: #eab308;       /* Aksen Kuning */
+      --brand-accent-bg: #fef9c3;
+      --brand-accent-text: #854d0e;
+      --border-color: #cbd5e1;
+      --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.08);
+      --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08);
+      --focus-ring: #eab308;
+      --nav-bg: rgba(255, 255, 255, 0.92);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg-primary: #0b1120;
+        --bg-secondary: #1e293b;
+        --bg-tertiary: #334155;
+        --text-primary: #f8fafc;
+        --text-secondary: #e2e8f0;
+        --text-muted: #94a3b8;
+        --brand-primary: #60a5fa;
+        --brand-primary-hover: #93c5fd;
+        --brand-accent: #facc15;
+        --brand-accent-bg: rgba(250, 204, 21, 0.16);
+        --brand-accent-text: #fde047;
+        --border-color: #334155;
+        --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+        --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+        --focus-ring: #facc15;
+        --nav-bg: rgba(11, 17, 32, 0.92);
+      }
+    }
+
+    :root[data-theme="dark"] {
+      --bg-primary: #0b1120;
+      --bg-secondary: #1e293b;
+      --bg-tertiary: #334155;
+      --text-primary: #f8fafc;
+      --text-secondary: #e2e8f0;
+      --text-muted: #94a3b8;
+      --brand-primary: #60a5fa;
+      --brand-primary-hover: #93c5fd;
+      --brand-accent: #facc15;
+      --brand-accent-bg: rgba(250, 204, 21, 0.16);
+      --brand-accent-text: #fde047;
+      --border-color: #334155;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+      --focus-ring: #facc15;
+      --nav-bg: rgba(11, 17, 32, 0.92);
+    }
+
+    /* Reset & Dasar */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.65;
+      overflow-x: hidden;
+      transition: background-color 0.25s ease, color 0.25s ease;
+    }
+
+    /* Aksesibilitas: Focus Visible & Skip Link */
+    :focus-visible {
+      outline: 3px solid var(--focus-ring);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: 1rem;
+      background: var(--brand-primary);
+      color: #ffffff;
+      padding: 0.75rem 1.25rem;
+      font-weight: 700;
+      border-radius: 0.5rem;
+      z-index: 1000;
+      text-decoration: none;
+      transition: top 0.2s ease;
+    }
+
+    .skip-link:focus {
+      top: 1rem;
+    }
+
+    :root[data-theme="dark"] .skip-link {
+      color: #0f172a;
+    }
+
+    /* Tata Letak Container */
+    .container {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    /* Navigasi Sticky */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-color: var(--nav-bg);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 4rem;
+      gap: 1rem;
+      flex-wrap: wrap;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+
+    .brand-logo {
+      font-weight: 800;
+      font-size: 1.125rem;
+      color: var(--text-primary);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .brand-dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: var(--brand-accent);
+      border: 2px solid var(--brand-primary);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-secondary);
+      font-weight: 600;
+      font-size: 0.925rem;
+      padding: 0.25rem 0.125rem;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--brand-primary);
+    }
+
+    .theme-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background-color: var(--bg-secondary);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 999px;
+      padding: 0.4rem 0.85rem;
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: border-color 0.2s ease, transform 0.15s ease;
+    }
+
+    .theme-toggle:hover {
+      border-color: var(--brand-primary);
+    }
+
+    /* Section Umum */
+    section {
+      padding: 4rem 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    section:last-of-type {
+      border-bottom: none;
+    }
+
+    .section-header {
+      margin-bottom: 2rem;
+    }
+
+    .section-tag {
+      display: inline-block;
+      background-color: var(--brand-accent-bg);
+      color: var(--brand-accent-text);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 1.75rem;
+      font-weight: 800;
+      line-height: 1.25;
+      color: var(--text-primary);
+    }
+
+    /* 1. Hero Section */
+    .hero {
+      padding: 5rem 0 4.5rem;
+      background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: var(--brand-accent-bg);
+      color: var(--brand-accent-text);
+      font-weight: 700;
+      font-size: 0.875rem;
+      padding: 0.35rem 0.9rem;
+      border-radius: 999px;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-profession {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--brand-primary);
+      margin-bottom: 1rem;
+    }
+
+    .hero-summary {
+      font-size: 1.075rem;
+      color: var(--text-secondary);
+      max-width: 65ch;
+      margin-bottom: 1.75rem;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    .hero-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: #1e40af;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 0.85rem 1.5rem;
+      border-radius: 0.6rem;
+      border: 2px solid #1e40af;
+      transition: background-color 0.2s ease, transform 0.15s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #1d4ed8;
+      border-color: #1d4ed8;
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: var(--bg-secondary);
+      color: var(--text-primary);
+      text-decoration: none;
+      font-weight: 700;
+      padding: 0.85rem 1.35rem;
+      border-radius: 0.6rem;
+      border: 1px solid var(--border-color);
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 1rem;
+      transition: border-color 0.2s ease;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--brand-primary);
+    }
+
+    /* Filter Keahlian */
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 1.5rem;
+      align-items: center;
+    }
+
+    .filter-label {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin-right: 0.25rem;
+    }
+
+    .filter-btn {
+      background-color: var(--bg-secondary);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 999px;
+      padding: 0.4rem 0.95rem;
+      font-family: inherit;
+      font-size: 0.875rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .filter-btn:hover {
+      border-color: var(--brand-primary);
+      color: var(--brand-primary);
+    }
+
+    .filter-btn[aria-pressed="true"] {
+      background-color: #1e40af;
+      color: #ffffff;
+      border-color: #1e40af;
+    }
+
+    /* 2. Pengalaman (Accordion) */
+    .exp-card {
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 0.85rem;
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+      margin-bottom: 1rem;
+      transition: opacity 0.25s ease;
+    }
+
+    .exp-card.is-filtered-out {
+      display: none;
+    }
+
+    .exp-trigger {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 1.35rem 1.5rem;
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      color: var(--text-primary);
+      font-family: inherit;
+    }
+
+    .exp-trigger:hover {
+      background-color: var(--bg-tertiary);
+    }
+
+    .exp-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+
+    .exp-company {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--brand-primary);
+    }
+
+    .exp-chevron {
+      flex-shrink: 0;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background-color: var(--bg-tertiary);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.25s ease;
+    }
+
+    .exp-trigger[aria-expanded="true"] .exp-chevron {
+      transform: rotate(180deg);
+    }
+
+    .exp-panel {
+      padding: 0 1.5rem 1.5rem;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .exp-panel[hidden] {
+      display: none;
+    }
+
+    .exp-list {
+      margin-top: 1rem;
+      padding-left: 1.25rem;
+      color: var(--text-secondary);
+    }
+
+    .exp-list li {
+      margin-bottom: 0.55rem;
+    }
+
+    .exp-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1.15rem;
+    }
+
+    .tag-pill {
+      font-size: 0.78rem;
+      font-weight: 600;
+      background-color: var(--bg-tertiary);
+      color: var(--text-secondary);
+      padding: 0.25rem 0.7rem;
+      border-radius: 0.4rem;
+    }
+
+    /* 3. Proyek */
+    .grid-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .card {
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 0.85rem;
+      padding: 1.5rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .card h3 {
+      font-size: 1.125rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    /* 4. Keahlian dan Alat */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .skill-box {
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-left: 4px solid var(--brand-primary);
+      border-radius: 0.75rem;
+      padding: 1.25rem;
+    }
+
+    .skill-box h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .skill-items {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .skill-items li {
+      background-color: var(--bg-tertiary);
+      color: var(--text-primary);
+      font-size: 0.875rem;
+      font-weight: 600;
+      padding: 0.35rem 0.75rem;
+      border-radius: 0.45rem;
+    }
+
+    /* 5. Sertifikasi dan Pendidikan */
+    .edu-list {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .edu-item {
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 0.85rem;
+      padding: 1.35rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .edu-item h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+
+    .edu-sub {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+
+    .edu-badge {
+      background-color: var(--brand-accent-bg);
+      color: var(--brand-accent-text);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+    }
+
+    /* 6. Kontak */
+    .contact-box {
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: var(--shadow-md);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1.5rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.85rem;
+      padding: 1rem;
+      background-color: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 0.75rem;
+    }
+
+    .contact-icon {
+      flex-shrink: 0;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 0.6rem;
+      background-color: var(--brand-accent-bg);
+      color: var(--brand-accent-text);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .contact-label {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      letter-spacing: 0.04em;
+    }
+
+    .contact-value {
+      font-weight: 600;
+      color: var(--text-primary);
+      word-break: break-word;
+    }
+
+    .contact-value a {
+      color: var(--brand-primary);
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    .site-footer {
+      padding: 2rem 0;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      border-top: 1px solid var(--border-color);
+      background-color: var(--bg-secondary);
+    }
+
+    /* Animasi Scroll (Menghormati prefers-reduced-motion) */
+    @media (prefers-reduced-motion: no-preference) {
+      .reveal {
+        opacity: 0;
+        transform: translateY(18px);
+        transition: opacity 0.55s ease, transform 0.55s ease;
+      }
+
+      .reveal.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* CSS Print untuk Cetak CV */
+    @media print {
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+        font-size: 11pt;
+        line-height: 1.45;
+      }
+
+      .site-header,
+      .theme-toggle,
+      .filter-bar,
+      .hero-actions,
+      .exp-chevron,
+      .skip-link,
+      .site-footer {
+        display: none !important;
+      }
+
+      section {
+        padding: 1.25rem 0 !important;
+        border-bottom: 1px solid #cbd5e1 !important;
+        break-inside: avoid;
+      }
+
+      .hero {
+        background: none !important;
+        padding-top: 0 !important;
+      }
+
+      .exp-panel {
+        display: block !important;
+        border-top: none !important;
+        padding-top: 0 !important;
+      }
+
+      .exp-card,
+      .card,
+      .skill-box,
+      .edu-item,
+      .contact-box,
+      .contact-item {
+        box-shadow: none !important;
+        border: 1px solid #cbd5e1 !important;
+        background: #ffffff !important;
+      }
+
+      .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+
+      a {
+        text-decoration: none !important;
+        color: #000000 !important;
+      }
+    }
+
+    /* Responsif Mobile */
+    @media (max-width: 640px) {
+      .nav-links {
+        gap: 0.75rem;
+        font-size: 0.85rem;
+      }
+
+      .hero {
+        padding: 3.5rem 0 3rem;
+      }
+
+      .exp-trigger {
+        padding: 1.1rem;
+      }
+
+      .exp-panel {
+        padding: 0 1.1rem 1.1rem;
+      }
+
+      .contact-box {
+        padding: 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Tautan Aksesibilitas Lewati ke Konten -->
+  <a href="#konten-utama" class="skip-link">Lewati ke konten utama</a>
+
+  <!-- Navigasi Atas Sticky -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#beranda" class="brand-logo" aria-label="Beranda Akmal Ramadhani">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Akmal Ramadhani</span>
+      </a>
+
+      <nav aria-label="Navigasi utama">
+        <ul class="nav-links">
+          <li><a href="#pengalaman">Pengalaman</a></li>
+          <li><a href="#proyek">Proyek</a></li>
+          <li><a href="#keahlian">Keahlian</a></li>
+          <li><a href="#pendidikan">Pendidikan</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Ubah tema warna tampilan">
+        <svg id="theme-icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <span id="theme-label">Tema</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="konten-utama">
+    <!-- 1. HERO SECTION -->
+    <section id="beranda" class="hero">
+      <div class="container">
+        <div class="hero-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+          </svg>
+          <span>Portofolio Pribadi</span>
+        </div>
+
+        <!-- EDIT: Nama Lengkap & Profesi -->
+        <h1>Akmal Ramadhani Putra Handoyo</h1>
+        <p class="hero-profession">Pelajar — Keahlian Layanan Perbankan Syariah</p>
+
+        <!-- EDIT: Satu kalimat pembuka / ringkasan diri -->
+        <p class="hero-summary">
+          Pelajar dengan kompetensi di bidang Layanan Perbankan Syariah yang terampil dalam pencatatan transaksi keuangan, penghitungan revenue, pengelolaan inventaris gudang, serta kerja sama tim.
+        </p>
+
+        <div class="hero-meta">
+          <span>
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            Mojokerto, Jawa Timur
+          </span>
+          <span>
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+            akmalramadhani2309@gmail.com
+          </span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#kontak" class="btn-primary">
+            <span>Hubungi Saya</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <button type="button" class="btn-secondary" onclick="window.print()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <polyline points="6 9 6 2 18 2 18 9"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            <span>Cetak CV</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. PENGALAMAN -->
+    <section id="pengalaman" class="reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Rekam Jejak</span>
+          <h2>Pengalaman Kerja &amp; Praktik</h2>
+        </div>
+
+        <!-- Filter Pengalaman Berdasarkan Keahlian -->
+        <div class="filter-bar" role="group" aria-label="Filter pengalaman berdasarkan keahlian">
+          <span class="filter-label">Filter keahlian:</span>
+          <button type="button" class="filter-btn" data-filter="semua" aria-pressed="true">Semua</button>
+          <button type="button" class="filter-btn" data-filter="keuangan" aria-pressed="false">Administrasi &amp; Revenue</button>
+          <button type="button" class="filter-btn" data-filter="sistem" aria-pressed="false">Input Sistem VHP</button>
+          <button type="button" class="filter-btn" data-filter="inventory" aria-pressed="false">Inventory Gudang</button>
+          <button type="button" class="filter-btn" data-filter="perbankan" aria-pressed="false">Materi BPR &amp; Tim</button>
+        </div>
+
+        <!-- Item Pengalaman Accordion -->
+        <article class="exp-card" data-skills="keuangan sistem inventory perbankan">
+          <h3>
+            <button
+              type="button"
+              class="exp-trigger"
+              aria-expanded="true"
+              aria-controls="exp-panel-1"
+              id="exp-btn-1"
+            >
+              <div>
+                <div class="exp-title">Praktek Kerja Lapangan (PKL)</div>
+                <div class="exp-company">PT. LYNN Hotel Mojokerto</div>
+              </div>
+              <span class="exp-chevron" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+          </h3>
+
+          <div id="exp-panel-1" class="exp-panel" role="region" aria-labelledby="exp-btn-1">
+            <ul class="exp-list">
+              <li>Menyusun slip setoran Revenue secara rapi dan akurat.</li>
+              <li>Menghitung Revenue harian untuk pencatatan pemasukan.</li>
+              <li>Mengelola dan memeriksa stok pada Inventory store/gudang.</li>
+              <li>Melakukan input data transaksi ke dalam sistem VHP (Visual Hotel Program).</li>
+              <li>Bekerja dengan baik secara mandiri maupun dalam tim/kelompok, serta cepat memahami materi operasional dan BPR.</li>
+            </ul>
+            <div class="exp-tags">
+              <span class="tag-pill">Slip Setoran Revenue</span>
+              <span class="tag-pill">Penghitungan Revenue</span>
+              <span class="tag-pill">Inventory Store/Gudang</span>
+              <span class="tag-pill">Sistem VHP</span>
+              <span class="tag-pill">Materi BPR &amp; Kerja Tim</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3. PROYEK -->
+    <section id="proyek" class="reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portofolio Kegiatan</span>
+          <h2>Proyek &amp; Praktik Terapan</h2>
+        </div>
+
+        <!-- EDIT: ganti dengan data proyek asli Anda jika sudah tersedia -->
+        <div class="grid-cards">
+          <article class="card">
+            <h3>Praktik Administrasi Revenue &amp; VHP</h3>
+            <p>
+              <!-- EDIT: ganti dengan deskripsi proyek atau tugas akhir sekolah -->
+              Pencatatan dan rekapitulasi transaksi harian menggunakan sistem VHP serta penyusunan dokumen slip setoran selama masa PKL di PT. LYNN Hotel Mojokerto.
+            </p>
+            <div class="exp-tags">
+              <span class="tag-pill">VHP</span>
+              <span class="tag-pill">Administrasi Keuangan</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Simulasi Layanan Perbankan Syariah</h3>
+            <p>
+              <!-- EDIT: ganti dengan proyek sekolah/praktikum perbankan syariah -->
+              Studi kasus dan praktik pemahaman operasional layanan perbankan syariah serta materi dasar Bank Perkreditan Rakyat (BPR) dalam kelompok belajar.
+            </p>
+            <div class="exp-tags">
+              <span class="tag-pill">Perbankan Syariah</span>
+              <span class="tag-pill">BPR</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. KEAHLIAN DAN ALAT -->
+    <section id="keahlian" class="reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Kompetensi</span>
+          <h2>Keahlian dan Alat</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-box">
+            <h3>
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+              <span>Perbankan &amp; Keuangan</span>
+            </h3>
+            <ul class="skill-items">
+              <li>Layanan Perbankan Syariah</li>
+              <li>Pemahaman Materi BPR</li>
+              <li>Menghitung Revenue</li>
+              <li>Menyusun Slip Setoran Revenue</li>
+            </ul>
+          </div>
+
+          <div class="skill-box">
+            <h3>
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+              <span>Sistem &amp; Operasional</span>
+            </h3>
+            <ul class="skill-items">
+              <li>Input Transaksi VHP</li>
+              <li>Inventory Store / Gudang</li>
+              <li>Administrasi Pencatatan</li>
+            </ul>
+          </div>
+
+          <div class="skill-box">
+            <h3>
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+              <span>Sikap Kerja</span>
+            </h3>
+            <ul class="skill-items">
+              <li>Kerja Sama Tim / Kelompok</li>
+              <li>Cepat Memahami Materi</li>
+              <li>Ketelitian &amp; Tanggung Jawab</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. SERTIFIKASI DAN PENDIDIKAN -->
+    <section id="pendidikan" class="reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Latar Belakang</span>
+          <h2>Sertifikasi dan Pendidikan</h2>
+        </div>
+
+        <div class="edu-list">
+          <div class="edu-item">
+            <div>
+              <!-- EDIT: ganti dengan nama sekolah dan tahun lulus asli -->
+              <h3>Sekolah Menengah Kejuruan (SMK) — Layanan Perbankan Syariah</h3>
+              <p class="edu-sub">Mojokerto, Jawa Timur <!-- EDIT: tambahkan nama sekolah & tahun --></p>
+            </div>
+            <span class="edu-badge">Pelajar</span>
+          </div>
+
+          <div class="edu-item">
+            <div>
+              <h3>Sertifikat Praktek Kerja Lapangan (PKL)</h3>
+              <p class="edu-sub">PT. LYNN Hotel Mojokerto — Administrasi Revenue, Inventory Gudang &amp; Sistem VHP</p>
+            </div>
+            <span class="edu-badge">Pengalaman PKL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. KONTAK -->
+    <section id="kontak" class="reveal">
+      <div class="container">
+        <div class="contact-box">
+          <div class="section-header" style="margin-bottom: 0.75rem;">
+            <span class="section-tag">Terhubung</span>
+            <h2>Kontak</h2>
+          </div>
+          <p style="color: var(--text-secondary);">
+            Silakan hubungi saya melalui email atau tautan profil di bawah ini untuk diskusi peluang magang, kerja sama, maupun informasi lebih lanjut.
+          </p>
+
+          <div class="contact-grid">
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-label">Email</div>
+                <div class="contact-value">
+                  <a href="mailto:akmalramadhani2309@gmail.com">akmalramadhani2309@gmail.com</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-label">Lokasi</div>
+                <div class="contact-value">Mojokerto, Jawa Timur</div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-label">LinkedIn / GitHub</div>
+                <div class="contact-value">
+                  <!-- EDIT: ganti dengan URL LinkedIn atau GitHub asli Anda -->
+                  <a href="https://github.com/username-anda" target="_blank" rel="noopener noreferrer">github.com/username-anda</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Sederhana -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="tahun-sekarang">2026</span> Akmal Ramadhani Putra Handoyo. Dibuat di Mojokerto, Jawa Timur.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      'use strict';
+
+      // 1. Tahun otomatis di footer
+      var yearEl = document.getElementById('tahun-sekarang');
+      if (yearEl) {
+        yearEl.textContent = String(new Date().getFullYear());
+      }
+
+      // 2. Pengaturan Tema Terang / Gelap Manual + localStorage aman (try/catch)
+      var root = document.documentElement;
+      var themeToggle = document.getElementById('theme-toggle');
+      var themeLabel = document.getElementById('theme-label');
+
+      function getSavedTheme() {
+        try {
+          return localStorage.getItem('portfolio-theme');
+        } catch (e) {
+          return null;
+        }
+      }
+
+      function saveTheme(theme) {
+        try {
+          localStorage.setItem('portfolio-theme', theme);
+        } catch (e) {
+          // Abaikan jika penyimpanan diblokir browser
+        }
+      }
+
+      function getEffectiveTheme() {
+        var explicit = root.getAttribute('data-theme');
+        if (explicit === 'dark' || explicit === 'light') {
+          return explicit;
+        }
+        return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+
+      function updateThemeButton() {
+        if (!themeToggle || !themeLabel) return;
+        var current = getEffectiveTheme();
+        var nextLabel = current === 'dark' ? 'Mode Terang' : 'Mode Gelap';
+        themeLabel.textContent = nextLabel;
+        themeToggle.setAttribute('aria-pressed', current === 'dark' ? 'true' : 'false');
+      }
+
+      var saved = getSavedTheme();
+      if (saved === 'dark' || saved === 'light') {
+        root.setAttribute('data-theme', saved);
+      }
+      updateThemeButton();
+
+      if (themeToggle) {
+        themeToggle.addEventListener('click', function () {
+          var current = getEffectiveTheme();
+          var next = current === 'dark' ? 'light' : 'dark';
+          root.setAttribute('data-theme', next);
+          saveTheme(next);
+          updateThemeButton();
+        });
+      }
+
+      // 3. Accordion Pengalaman (aria-expanded & aria-controls)
+      var accordionTriggers = document.querySelectorAll('.exp-trigger');
+      accordionTriggers.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var expanded = btn.getAttribute('aria-expanded') === 'true';
+          var panelId = btn.getAttribute('aria-controls');
+          var panel = panelId ? document.getElementById(panelId) : null;
+
+          btn.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+          if (panel) {
+            panel.hidden = expanded;
+          }
+        });
+      });
+
+      // 4. Filter Pengalaman Berdasarkan Keahlian (aria-pressed)
+      var filterButtons = document.querySelectorAll('.filter-btn');
+      var expCards = document.querySelectorAll('.exp-card');
+
+      filterButtons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var filter = btn.getAttribute('data-filter');
+
+          filterButtons.forEach(function (b) {
+            b.setAttribute('aria-pressed', b === btn ? 'true' : 'false');
+          });
+
+          expCards.forEach(function (card) {
+            var skills = (card.getAttribute('data-skills') || '').split(' ');
+            if (filter === 'semua' || skills.indexOf(filter) !== -1) {
+              card.classList.remove('is-filtered-out');
+            } else {
+              card.classList.add('is-filtered-out');
+            }
+          });
+        });
+      });
+
+      // 5. Animasi Muncul Saat Scroll (Menghormati prefers-reduced-motion)
+      var prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var revealElements = document.querySelectorAll('.reveal');
+
+      if (!prefersReduced && 'IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function (entries, obs) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              obs.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12 });
+
+        revealElements.forEach(function (el) {
+          observer.observe(el);
+        });
+      } else {
+        revealElements.forEach(function (el) {
+          el.classList.add('is-visible');
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
